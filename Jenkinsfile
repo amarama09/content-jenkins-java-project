@@ -16,8 +16,7 @@ pipeline{
 
               echo 'Testing the Project ....'
 
-              sh 'ant -f test.xml -v'
-              junit 'reports/result.xml'
+
 
               }
           }

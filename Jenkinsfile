@@ -9,7 +9,7 @@ pipeline{
 
             echo 'Building the Project.....'
             sh 'ant -f build.xml -v'
-            
+
 
             }
         }
@@ -31,6 +31,17 @@ pipeline{
 
 
             }
+
+        }
+
+  }
+
+
+  post {
+
+        always{
+
+            archive 'dist/*.jar'
 
         }
 

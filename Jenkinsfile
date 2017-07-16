@@ -9,6 +9,18 @@ pipeline{
   }
 
   stages{
+
+          stage('Test Project'){
+
+              steps{
+
+              echo 'Testing the Project ....'
+
+              sh 'ant -f test.xml -v'
+              junit 'reports/result.xml'
+
+              }
+          }
         stage('Build Project'){
 
             steps{
@@ -20,17 +32,7 @@ pipeline{
             }
         }
 
-        stage('Test Project'){
 
-            steps{
-
-            echo 'Testing the Project ....'
-
-            sh 'ant -f test.xml -v'
-            junit 'reports/result.xml'
-
-            }
-        }
 
         stage('Deploy Project'){
 

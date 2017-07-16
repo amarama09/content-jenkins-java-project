@@ -40,7 +40,7 @@ pipeline{
   post {
 
         always{
-
+            echo 'Archiving the files .......'
             archive 'dist/*.jar'
 
         }

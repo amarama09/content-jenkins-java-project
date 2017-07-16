@@ -41,7 +41,7 @@ pipeline{
 
         always{
             echo 'Archiving the files .......'
-            archive 'dist/*.jar'
+            archiveArtifacts artifacts: 'dist/*.jar', fingerprint: true
 
         }
 

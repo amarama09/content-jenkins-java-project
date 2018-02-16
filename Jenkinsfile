@@ -1,7 +1,4 @@
 
-#!groovy
-@Library('PipelineLibrary') _
-
 pipeline {
 
   agent none

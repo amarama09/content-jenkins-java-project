@@ -1,5 +1,6 @@
 
-@Library('PipelineLibrary')
+#!groovy
+@Library('PipelineLibrary') _
 
 pipeline {
 

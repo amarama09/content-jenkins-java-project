@@ -1,5 +1,7 @@
 pipeline {
 
+  @Library('PipelineLibrary')
+
   agent none
 
 

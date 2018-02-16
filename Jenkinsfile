@@ -1,6 +1,7 @@
-pipeline {
 
-  @Library('PipelineLibrary')
+@Library('PipelineLibrary')
+
+pipeline {
 
   agent none
 

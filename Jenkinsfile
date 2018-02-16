@@ -19,7 +19,7 @@ pipeline {
       }
 
       steps {
-        SayHello 'Amarillo'
+        SayHello "Amarillo"
 
         sh 'ant -f test.xml -v'
         //

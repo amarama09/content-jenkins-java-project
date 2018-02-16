@@ -12,6 +12,18 @@ pipeline {
 
 
   stages {
+
+    stage('greetings'){
+      agent {
+        label 'apache'
+      }
+
+      steps{
+        SayHello "Amarillo"
+      }
+    }
+
+
     stage('Unit Tests') {
 
       agent{
@@ -19,7 +31,7 @@ pipeline {
       }
 
       steps {
-        SayHello "Amarillo"
+
 
         sh 'ant -f test.xml -v'
         //

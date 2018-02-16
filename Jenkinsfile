@@ -18,8 +18,8 @@ pipeline {
       }
 
       steps {
+        SayHello 'Amarillo'
 
-        
         sh 'ant -f test.xml -v'
         //
         junit 'reports/result.xml'
